@@ -1,0 +1,451 @@
+@font-face {
+    font-family: moh;
+    src: url(../fonts/YekanWeb-Regular.woff)
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body {
+    direction: rtl;
+    font-size: 100%;
+    font-family: arial
+}
+
+ul li {
+    list-style-type: none
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+a:visited {
+    color: black
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    float: right;
+    overflow: hidden
+}
+
+#head {
+    width: 100%;
+    height: 80px;
+    float: left;
+    background: rgba(0, 0, 0, .75)
+}
+
+#head > ul {
+    height: 100%;
+    float: right;
+    color: white
+}
+
+#head > ul > li {
+    height: 100%;
+    float: right;
+    padding: 0 15px;
+    margin: 0 1px;
+    line-height: 80px;
+    font-family: moh;
+    cursor: pointer;
+    transition: .4s
+}
+
+#head > ul > li:hover {
+    background: #6A629B;
+    color: #FFC000
+}
+
+#head > ul > li:first-child {
+    background: #6A629B;
+    color: #FFC000
+}
+
+#head > ul > li:last-child {
+    display: none;
+    position: relative
+}
+
+.click {
+    color: #FFC000;
+    background: #6A629B
+}
+
+#head > div {
+    width: 250px;
+    height: 100%;
+    padding: 10px;
+    float: left
+}
+
+#head > div > img {
+    height: 100%;
+    float: left;
+    cursor: pointer
+}
+
+#res-menu {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    padding: 20px;
+    background: #6A629B;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    z-index: 9;
+    overflow: auto
+}
+
+#res-menu > span {
+    font-size: 30px;
+    float: left;
+    cursor: pointer;
+    color: #FFC000;
+    padding: 20px
+}
+
+#res-menu > ul > li {
+    font-family: moh;
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+    color: white;
+    padding: 20px 0
+}
+
+#res-menu > ul > li:first-child {
+    color: #FFC000
+}
+
+#total {
+    width: 500%;
+    height: calc(100% - 160px);
+    float: right;
+    transition: .4s
+}
+
+#total > div {
+    width: 20%;
+    height: 100%;
+    float: right
+}
+
+#home > div,
+#contact > div {
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 203, 59);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center
+}
+
+#contact > div {
+    background: white
+}
+
+#home > div > video,
+#contact > div > video {
+    height: 100%;
+    width: 100%
+}
+
+#learn {
+    overflow: auto;
+    background: #f0f0f0
+}
+
+#music {
+    overflow: auto
+}
+
+#acc {
+    width: 80%;
+    height: auto;
+    margin: 20px auto
+}
+
+#acc > li {
+    border-bottom: 2px solid #6A629B;
+    color: #6A629B;
+    list-style-type: none;
+    cursor: pointer
+}
+
+#acc > li > h2:hover {
+    color: #FFC000
+}
+
+#acc > li > h2 {
+    font-family: moh;
+    padding: 15px 0;
+    font-size: 15px
+}
+
+#acc > li > h2 i {
+    float: left;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    font-size: 30px
+}
+
+#acc > li > section {
+    width: 100%;
+    float: right;
+    padding: 20px;
+    display: none
+}
+
+#acc > li > section > div {
+    width: 49%;
+    float: right
+}
+
+#acc > li > section > h3 {
+    width: 49%;
+    font-family: moh;
+    float: right;
+    margin-right: 2%;
+    color: #FFC000
+}
+
+#acc > li > section > p {
+    width: 49%;
+    margin-right: 2%;
+    font-family: moh;
+    float: right
+}
+
+.rotate {
+    transform: rotate(90deg)
+}
+
+#about_me {
+    background: #f0f0f0
+}
+
+#about_me > div {
+    height: 100%;
+    float: right
+}
+
+#about_me > div:nth-of-type(1) {
+    width: 70%;
+    padding: 50px;
+    overflow: auto
+}
+
+#about_me > div:nth-of-type(2) {
+    width: auto;
+    padding: 50px 0
+}
+
+#about_me > div > h1 {
+    width: 100%;
+    font-family: moh;
+    color: #6A629B
+}
+
+#about_me > div > p {
+    width: 100%;
+    font-family: moh;
+    font-size: 17px;
+    color: #6A629B;
+    margin-top: 20px
+}
+
+#about_me > div > p > a {
+    color: #6A629B;
+    font-weight: 700
+}
+
+#about_me > div > img {
+    height: 100%;
+    transform: scaleX(-1)
+}
+
+#foot {
+    width: 100%;
+    height: 80px;
+    float: left;
+    background: rgba(0, 0, 0, .75)
+}
+
+#foot > p {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    color: white;
+    font-family: moh;
+    font-size: 15px;
+    line-height: 40px;
+    float: left
+}
+
+#foot > p > span {
+    margin-right: 10px;
+    color: #FFC000
+}
+
+#foot > p > span > a {
+    color: white
+}
+
+#foot > div {
+    width: 100%;
+    height: 40px;
+    float: left;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center
+}
+
+#foot > div > a {
+    display: block;
+    height: 100%;
+    float: right;
+    padding: 10px 5px 0 5px
+}
+
+#foot > div > a > i {
+    color: #fff;
+    font-size: 30px
+}
+
+#foot > div > a > i:hover {
+    color: #FFC000
+}
+
+#foot > div > a > img {
+    height: 30px
+}
+
+@media screen and (max-width:768px) {
+    #head > ul > li {
+        display: none
+    }
+
+    #head > ul > li:last-child {
+        display: block
+    }
+
+    #head > ul > li::after {
+        display: none
+    }
+
+    #acc {
+        width: 100%
+    }
+
+    #acc > li > section > div {
+        width: 100%
+    }
+
+    #acc > li > section > h3 {
+        width: 100%;
+        margin-right: 0
+    }
+
+    #acc > li > section > p {
+        width: 100%;
+        margin-right: 0
+    }
+
+    #acc > li {
+        width: 95%;
+        margin: 0 2.5%
+    }
+
+    #res-menu {
+        display: block
+    }
+
+    #foot > p {
+        font-size: 10px;
+        height: 20px;
+        line-height: 20px
+    }
+
+    #foot > p > span {
+        display: block;
+        width: 100%;
+        height: 20px;
+        line-height: 15px
+    }
+
+    #about_me > div:nth-of-type(2) > img {
+        display: none
+    }
+
+    #about_me > div:nth-of-type(1) {
+        width: 100%
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    #head > ul > li {
+        display: none
+    }
+
+    #head > ul > li:last-child {
+        display: block
+    }
+
+    #acc {
+        width: 100%
+    }
+
+    #acc > li {
+        width: 95%;
+        margin: 0 2.5%
+    }
+
+    #res-menu {
+        display: block
+    }
+
+    #about_me > div:nth-of-type(2) > img {
+        display: none
+    }
+
+    #about_me > div:nth-of-type(1) {
+        width: 100%
+    }
+}
+}
